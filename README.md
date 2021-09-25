@@ -1,7 +1,7 @@
 ## Practice Questions Geeks For Geeks:
 
 ## Topic - <b>Arrays</b>
-### <B> Q.1  Move all zeroes to end of array </B>
+### <B><U> Q.1  Move all zeroes to end of array </U></B>
 
 Given an array arr[] of N positive integers. Push all the zero’s of the given array to the right end of the array while maitaining 
 the order of non-zero elements.
@@ -39,7 +39,7 @@ Constraints:
 1 ≤ N ≤ 105
 0 ≤ arri ≤ 105
 
-### <B> Q.2 Leaders in an array </B>
+### <B><U> Q.2 Leaders in an array </U></B>
 
 Given an array A of positive integers. Your task is to find the leaders in the array.
 An element of array is leader if it is greater than or equal to all the elements to its right side.
