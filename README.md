@@ -2,11 +2,9 @@
 
 ## Topic - <b>Arrays</b>
 Q.1 Move all zeroes to end of array 
-Easy Accuracy: 51.75% Submissions: 14437 Points: 2
 
 Given an array arr[] of N positive integers. Push all the zero’s of the given array to the right end of the array while maitaining 
 the order of non-zero elements.
-
 
 Example 1:
 
