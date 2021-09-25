@@ -1,6 +1,6 @@
-##Practice Questions Geeks For Geeks:
+## Practice Questions Geeks For Geeks:
 
-## Topic <b>Arrays</b>
+## Topic - <b>Arrays</b>
 Q.1 Move all zeroes to end of array 
 Easy Accuracy: 51.75% Submissions: 14437 Points: 2
 
