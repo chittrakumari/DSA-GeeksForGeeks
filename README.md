@@ -12,5 +12,9 @@ Given an array A of positive integers. Your task is to find the leaders in the a
 An element of array is leader if it is greater than or equal to all the elements to its right side.
 The rightmost element is always a leader.
 
+## Topic - <b>Binary Search</b>
+### <B><U> Q.4 Repeating Element In the Array </U></B>
 
+  Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n]
+inclusive.There is only one repeated number in nums, return this repeated number. 
 
