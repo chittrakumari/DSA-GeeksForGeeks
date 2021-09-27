@@ -1,4 +1,4 @@
-## Practice Questions Geeks For Geeks:
+## Practice Questions DSA ( Platforms : Leetcode & GeeksForGeeks)
 
 ## Topic - <b>Arrays</b>
 ### <B><U> Q.1  Move all zeroes to end of array </U></B>
