@@ -18,3 +18,6 @@ The rightmost element is always a leader.
   Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n]
 inclusive.There is only one repeated number in nums, return this repeated number. 
 
+## Topic - <b>Sorting</b>
+### <B><U> Q.4 Bubble Sort </U></B>
+Q.Given an Integer N and a list arr. Sort the array using bubble sort algorithm.
