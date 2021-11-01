@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 public class QuickSort {
     public static int partition(int[] arr,int start,int end){
         int pivot=arr[end];
