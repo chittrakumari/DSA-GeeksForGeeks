@@ -1,37 +1,33 @@
 package Stack;
 
-import java.io.OptionalDataException;
+import java.util.ArrayList;
 
-public class Stack {
+public class ArrayList_Implementation_Stack {
 
-    int size;
-    int[] arr;
+    ArrayList<Integer> al = new ArrayList<>();
     int top;
-    Stack(int size){
+    ArrayList_Implementation_Stack(){
         top=-1;
-        this.size=size;
-        arr=new int[size];
+
     }
 
     public  boolean push(int data){
-        if(size-1==top){
-            return false;
-        }
-        else{
+
+
             top=top+1;
-            arr[top]=data;
+            al.add(data);
             return true;
         }
-    }
+
     public  int pop(){
         if(top==-1){
             return -1;
         }
         else{
-            int result=arr[top];
-            top=top-1;
-            size=size-1;
+            int result=al.get(top);
 
+            al.remove(top);
+            top=top-1;
             return result;
         }
     }
@@ -42,11 +38,11 @@ public class Stack {
         else{
 
 
-            return arr[top];
+            return al.get(top);
         }
     }
     public  boolean isEmpty(){
-        if(top==-1){
+        if(al.isEmpty()){
             return true;
         }
         else{
@@ -56,11 +52,11 @@ public class Stack {
         }
     }
     public  int size(){
-        return top+1;
+        return al.size();
     }
 
     public static void main(String[] args) {
-Stack s=new Stack(4);
+        ArrayList_Implementation_Stack s=new ArrayList_Implementation_Stack();
         System.out.println(s.push(10));
 
         System.out.println(s.push(20));
@@ -71,3 +67,4 @@ Stack s=new Stack(4);
         System.out.println(s.isEmpty());
     }
 }
+
