@@ -26,6 +26,31 @@ public class LinkedList {
             }
             return head;
         }
+        public Node pairwiseSwap(){
+            if(head==null || head.next==null){
+                return head;
+            }
+            Node curr=head;
+            while(curr!=null){
+                if(curr.next!=null && curr!=null ) {
+                    int t = curr.data;
+                    curr.data = curr.next.data;
+                    curr.next.data = t;
+
+                }
+                else{
+                    return head;
+                }
+                if(curr.next.next!=null && curr.next!=null && curr!=null){
+                    curr=curr.next.next;
+                }
+                else{
+                    return head;
+                }
+
+            }
+            return head;
+        }
         public Node reverse(){
             if(head==null){
                 return null;
@@ -58,18 +83,46 @@ public class LinkedList {
             }
 
         }
+        public Node sortedduplicates(){
+            if(head==null || head.next==null){
+                return head;
+            }
+            Node curr=head;
+            Node next=head;
+            Node prev=null;
+            while(curr.next!=null){
+                int f=0;
+                if(curr.data==next.data) {
+                    while (curr.data == next.data && next != null) {
+                        f=1;
+                        next = next.next;
+                    }
+                    if(f==1){
+                        prev.next=next;
+                    }
+                }
+            else{
+                    prev=curr;
+                    curr=curr.next;
+                    next=curr.next.next;
+                }
+            }
+            return head;
+    }
+
 
 
     public static void main(String[] args) {
         LinkedList obj=new LinkedList();
-        obj.insert(45);
+        obj.insert(5);
         obj.insert(55);
-        obj.insert(95);
-        obj.insert(55);
-        obj.insert(90);
+        obj.insert(85);
+        obj.insert(85);
+        obj.insert(43);
         obj.traversal();
-        obj.reverse();
+        obj.sortedduplicates();
         obj.traversal();
+
     }
 
 
